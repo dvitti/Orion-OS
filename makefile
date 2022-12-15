@@ -6,4 +6,4 @@ build:
 	cat boot.bin kernel.bin > so.bin
 
 run:
-	qemu-system-x86_64 -drive format=raw,file="so.bin",index=0,if=floppy -m 128M
+	qemu-system-x86_64 -drive format=raw,file="so.bin",index=0,if=ide -m 128M

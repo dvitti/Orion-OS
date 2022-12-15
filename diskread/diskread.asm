@@ -15,7 +15,6 @@ ReadDisk:
 
     ret
 
-
 BOOT_DISK:
     db 0
 
@@ -24,6 +23,6 @@ DiskReadErrorMsg:
 
 DiskReadFailed:
     mov bx, DiskReadErrorMsg
-    call PrintString
+    call print
 
     jmp $

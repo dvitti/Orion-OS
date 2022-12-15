@@ -15,8 +15,11 @@
 
 	jmp $
 
-	%include "print.asm"
-	%include "diskread.asm"
+
+
+	%include "print/boot_sect_print.asm"
+	%include "diskread/diskread.asm"
+
 
 	
 ;The $ symbol denotes the current address of the statement
