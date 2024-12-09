@@ -1,0 +1,359 @@
+;----------------------------------------
+;-  Setup IDT   -
+;----------------------------------------
+[bits 32]
+idt_start:
+irq0:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq1:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq2:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq3:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq4:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq5:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq6:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq7:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq8:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq9:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq10:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq11:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq12:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq13:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq14:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq15:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq16:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq17:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq18:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq19:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq20:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq21:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq22:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq23:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq24:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq25:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq26:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq27:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq28:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq29:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq30:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq31:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq32:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq33:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq34:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq35:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq36:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq37:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq38:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq39:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq40:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq41:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq42:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq43:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq44:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq45:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq46:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+irq47:
+        dw isr0
+        dw 0x1000
+        db 0x00
+        db 0x8E
+        dw 0x0000
+idt_end:
+ 
+ 
+idt_point:
+        dw idt_end - idt_start - 1
+        ;dw 0x0000
+        dw idt_start
+ 
+ 
+isr0:
+    ; 1. Save CPU state
+	;pusha ; Pushes edi,esi,ebp,esp,ebx,edx,ecx,eax
+
+    pusha                    ; Pushes edi,esi,ebp,esp,ebx,edx,ecx,eax
+
+    mov ax, ds               ; Lower 16-bits of eax = ds.
+    push eax                 ; save the data segment descriptor
+
+    mov ax, 0x10  ; load the kernel data segment descriptor
+    mov ds, ax
+    mov es, ax
+    mov fs, ax
+    mov gs, ax
+
+    ; 2. Call C handler
+    mov ebx, MSG_PROT_MODE
+    call print_string_pm
+
+    pop ebx        ; reload the original data segment descriptor
+    mov ds, bx
+    mov es, bx
+    mov fs, bx
+    mov gs, bx
+
+    popa                     ; Pops edi,esi,ebp...
+    add esp, 8     ; Cleans up the pushed error code and pushed ISR number
+    sti
+    iret           ; pops 5 things at once: CS, EIP, EFLAGS, SS, and ESP
+
+; This is our common IRQ stub. It saves the processor state, sets
+; up for kernel mode segments, calls the C-level fault handler,
+; and finally restores the stack frame.
+irq_common_stub:
+   pusha                    ; Pushes edi,esi,ebp,esp,ebx,edx,ecx,eax
+
+   mov ax, ds               ; Lower 16-bits of eax = ds.
+   push eax                 ; save the data segment descriptor
+
+   mov ax, 0x10  ; load the kernel data segment descriptor
+   mov ds, ax
+   mov es, ax
+   mov fs, ax
+   mov gs, ax
+
+   call irq_handler
+
+   pop ebx        ; reload the original data segment descriptor
+   mov ds, bx
+   mov es, bx
+   mov fs, bx
+   mov gs, bx
+
+   popa                     ; Pops edi,esi,ebp...
+   add esp, 8     ; Cleans up the pushed error code and pushed ISR number
+   sti
+   iret           ; pops 5 things at once: CS, EIP, EFLAGS, SS, and ESP
