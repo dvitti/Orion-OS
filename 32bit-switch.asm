@@ -4,7 +4,7 @@ switch_to_pm:
 
     lgdt [gdt_descriptor] ; 2. load the GDT descriptor
     call pic_remaping
-    lidt [idt_start]
+    lidt [idt_point]
 
     mov eax, cr0
     or eax, 0x1 ; 3. set 32-bit mode bit in cr0
@@ -22,23 +22,14 @@ init_pm: ; we are now using 32-bit instructions
     xor ax, ax
     mov gs, ax
     mov ax, DATA_SEG 
-
-    mov bp, 0x7C00
-	mov sp, bp
-    
-    ; (upper left corner of screen)
-	mov byte [gs:0xB8000],'H'
-	mov byte [gs:0xB8002],'e'
-	mov byte [gs:0xB8004],'l'
-	mov byte [gs:0xB8006],'l'
-	mov byte [gs:0xB8008],'o'
     
     sti
-; try an interrupt
-	;int 0x20
 
 
     mov ebp, 0x90000 ; 6. update the stack right at the top of the free space
     mov esp, ebp
+
+    ; try an interrupt
+	;int 0x20
 
     call BEGIN_PM ; 7. Call a well-known label with useful code

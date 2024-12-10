@@ -22,11 +22,13 @@
 [bits 32]
 BEGIN_PM: ; after the switch we will get here
 
-    mov eax, 0
-    ;div eax
-
     mov ebx, MSG_PROT_MODE
 	call print_string_pm
+
+    mov eax, 0
+    div eax
+
+
     ;call print_hex_pm ; Note that this will be written at the top left corner
     jmp $
 
